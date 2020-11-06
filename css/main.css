@@ -1,0 +1,239 @@
+@import url(reset.css);
+@import url('https://rsms.me/inter/inter.css');
+
+html { 
+    font-family: 'Inter', sans-serif; 
+}
+@supports (font-variation-settings: normal) {
+  html { 
+      font-family: 'Inter var', sans-serif; 
+    }
+}
+
+:root { 
+
+    /* Multipliers / Units / Etc */
+    --main-multiplier: 1.5;
+    --margin-1: 40px;
+
+    /* Colors */
+    --color-dark: #2B2727;
+    --color-light: #F9F7F2;
+    --color-accent: #F8673A;
+
+    /* Typography */
+    --font-family: 'Inter var', 'Inter', sans-serif;
+    --font-size: 16px;
+    --line-height: var(--main-multiplier)
+
+}
+
+body {
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    padding: var(--margin-1);
+    padding-top: 20px;
+    font-weight: normal;
+    letter-spacing: -0.02em;
+
+}
+
+a, a:hover {
+    color: var(--color-dark);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+section.welcome {
+    max-width: 1400px;
+}
+
+.data-content {
+    font-size: calc(var(--font-size)/1.35);
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    opacity: 50%;
+    font-weight: 400;
+    margin-bottom: calc(var(--margin-1) / 2);
+    letter-spacing: 0.005em;
+}
+
+.data-content a, .data-content a:hover {
+    color: var(--color-dark);
+}
+
+.data-content a:hover {
+    color: var(--color-dark);
+    text-decoration: underline;
+}
+
+p.welcome-copy {
+    font-size: 56px;
+    line-height: 105%;
+    letter-spacing: -0.02em;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    font-weight: normal;
+    margin-bottom: calc(var(--margin-1) * 2)    
+}
+
+.welcome-copy > span {
+    position: relative;
+}
+
+.welcome-copy > span::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../i/highlight-strokes.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 20px;
+    margin: -20px;
+}
+
+.welcome-copy > a {
+    position: relative;
+}
+
+.welcome-copy > a::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 0;
+    right: 10px;
+    background-image: url(../i/highlight-round.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 20px;
+    margin: -20px;
+}
+
+.previous-copy {
+    font-size: calc(var(--font-size) * 2);
+    line-height: 105%;
+    margin-bottom: calc(var(--margin-1) * var(--main-multiplier));
+}
+
+.previous-copy > span {
+    opacity: 40%;
+}
+
+.previous-copy a {
+    position: relative;
+}
+
+.previous-copy a::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    /* bottom: -10px; */
+    /* left: 0; */
+    right: 20px;
+    padding: 40px;
+    margin: -40px;
+    background-image: url(../i/highlight-plane.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.previous-copy a::after {
+    content: "";
+    position: absolute;
+    /* top: 20px; */
+    bottom: -10px;
+    left: 0;
+    right: 10px;
+    padding: 20px;
+    margin: -20px;
+    background-image: url(../i/underline-5.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.external-links {
+    font-size: calc(var(--font-size) * 2);
+    line-height: 100%;
+    margin-bottom: calc(var(--margin-1) * var(--main-multiplier));
+}
+
+.external-links > a {
+    position: relative;
+}
+
+.external-links > a::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0px;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.external-links > a:nth-of-type(1)::after {
+    background-image: url(../i/underline-1.svg);
+}
+
+.external-links > a:nth-of-type(2)::after {
+    background-image: url(../i/underline-2.svg);
+}
+
+.external-links > a:nth-of-type(3)::after {
+    background-image: url(../i/underline-3.svg);
+}
+
+.external-links > a:nth-of-type(4)::after {
+    background-image: url(../i/underline-4.svg);
+}
+
+.external-links > a:nth-of-type(5)::after {
+    background-image: url(../i/underline-1.svg);
+}
+
+
+.bullet {
+    display: inline-block;
+    height: calc(var(--font-size) * 2);
+    width: calc(var(--font-size) * 2);
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+}
+
+.bullet-1 {
+    background-image: url(../i/bullet-1.svg);   
+}
+
+.bullet-2 {
+    background-image: url(../i/bullet-2.svg);   
+}
+
+.bullet-3 {
+    background-image: url(../i/bullet-3.svg);   
+}
+
+
+@media only screen and (max-width: 600px) { 
+    p.welcome-copy {
+        font-size: calc(var(--font-size) * 2);
+    }
+
+    body {
+        padding: calc(var(--margin-1) / 2);
+    }
+
+    .previous-copy a::before {
+        display: none;
+    }
+}
