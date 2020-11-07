@@ -11,7 +11,6 @@ html {
 }
 
 :root { 
-
     /* Multipliers / Units / Etc */
     --main-multiplier: 1.5;
     --margin-1: 40px;
@@ -25,7 +24,6 @@ html {
     --font-family: 'Inter var', 'Inter', sans-serif;
     --font-size: 16px;
     --line-height: var(--main-multiplier)
-
 }
 
 body {
@@ -38,7 +36,6 @@ body {
     padding-top: 20px;
     font-weight: normal;
     letter-spacing: -0.02em;
-
 }
 
 a, a:hover {
