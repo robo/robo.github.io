@@ -17,8 +17,8 @@ html {
     --margin-1: 40px;
 
     /* Colors */
-    --color-dark: #2B2727;
-    --color-light: #F9F7F2;
+    --color-text: #2B2727;
+    --color-bg: #F9F7F2;
     --color-accent: #F8673A;
 
     /* Typography */
@@ -28,12 +28,15 @@ html {
 
 }
 
+
+
+
 body {
     font-size: var(--font-size);
     font-family: var(--font-family);
     line-height: var(--line-height);
-    color: var(--color-dark);
-    background-color: var(--color-light);
+    color: var(--color-text);
+    background-color: var(--color-bg);
     padding: var(--margin-1);
     padding-top: 20px;
     font-weight: normal;
@@ -42,7 +45,7 @@ body {
 }
 
 a, a:hover {
-    color: var(--color-dark);
+    color: var(--color-text);
     text-decoration: none;
 }
 
@@ -65,11 +68,11 @@ section.welcome {
 }
 
 .data-content a, .data-content a:hover {
-    color: var(--color-dark);
+    color: var(--color-text);
 }
 
 .data-content a:hover {
-    color: var(--color-dark);
+    color: var(--color-text);
     text-decoration: underline;
 }
 
@@ -235,5 +238,24 @@ p.welcome-copy {
 
     .previous-copy a::before {
         display: none;
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --color-text: #F9F7F2;
+        --color-bg: #2B2727;
+        --color-accent: #F8673A;
+    }
+    /* Dark theme styles go here */
+}
+
+@media (prefers-color-scheme: light) {
+    /* Dark theme styles go here */
+    body {
+        --color-text: #2B2727;
+        --color-bg: #F9F7F2;
+        --color-accent: #F8673A;
     }
 }
