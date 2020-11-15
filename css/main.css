@@ -38,6 +38,11 @@ body {
     letter-spacing: -0.02em;
 }
 
+::selection {
+    color: var(--color-bg);
+    background-color: var(--color-accent);
+}
+
 a, a:hover {
     color: var(--color-text);
     text-decoration: none;
