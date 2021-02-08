@@ -39,8 +39,8 @@ body {
 }
 
 ::selection {
-    color: var(--color-bg);
-    background-color: var(--color-accent);
+    text-shadow: 0px 0 15px var(--color-text);
+    color: transparent;
 }
 
 a, a:hover {
