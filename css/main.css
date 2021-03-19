@@ -39,7 +39,7 @@ body {
 }
 
 ::selection {
-    text-shadow: 0px 0 15px var(--color-text);
+    text-shadow: 0px 0 10px var(--color-text);
     color: transparent;
 }
 
