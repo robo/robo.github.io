@@ -115,7 +115,7 @@ p.welcome-copy {
     right: -15px;
     background-image: url(../i/highlight-round.svg);
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: 100%;
     padding: 12px;
     margin: -18px;
 }
