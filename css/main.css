@@ -111,13 +111,13 @@ p.welcome-copy {
     position: absolute;
     top: 20px;
     bottom: 0;
-    left: 0;
-    right: 10px;
+    left: -35px;
+    right: -15px;
     background-image: url(../i/highlight-round.svg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 20px;
-    margin: -20px;
+    background-size: 150%;
+    padding: 12px;
+    margin: -18px;
 }
 
 .previous-copy {
